@@ -1,5 +1,5 @@
 // src/lib/github-api.ts
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Store securely in .env or env variable, not in source for production
+const GITHUB_TOKEN = import.meta.env.GITHUB_TOKEN; // Store securely in .env or env variable, not in source for production
 export async function searchRepositories(
   query: string,
   filters: { languages?: string[]; hasGoodFirstIssues?: boolean } = {}
