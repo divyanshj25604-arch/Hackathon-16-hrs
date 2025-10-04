@@ -1,5 +1,5 @@
 // src/lib/github-api.ts
-
+const GITHUB_TOKEN = "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"; // Store securely in .env or env variable, not in source for production
 export async function searchRepositories(
   query: string,
   filters: { languages?: string[]; hasGoodFirstIssues?: boolean } = {}
